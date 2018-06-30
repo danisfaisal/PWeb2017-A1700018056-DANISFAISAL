@@ -1,0 +1,214 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beritaku.com</title>
+    <link rel="stylesheet" href="gambar.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="content">
+      <script type="text/javascript" src="js/jQuery-2.1.4.min.js"></script>
+      <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  </head>
+  <body>
+      <div id="hasil"></div>
+          <script>
+            var tanggal = new Date();
+            document.getElementById("hasil").innerHTML = tanggal;
+          </script>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <a href="index.php" class="link"><h1><span class="highlight">Beritaku</span>.com</h1></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="user.php">
+                <?php  if (isset($_SESSION['username'])) : ?>
+                <?php echo $_SESSION['username']; ?>
+                <?php endif ?></a></li>
+            <li><a href="gambar.html?logout='1'" style="color: white;">Keluar</a></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="headerbawah">
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.php">Home</a>
+        </li>
+        <li>
+          <a href="https://daniskun.blogspot.com/">My Blog</a>
+        </li>
+        <li>
+          <a href="#">Olahraga</a>
+        </li>
+        <li>
+          <a href="#">Politik</a>
+        </li>
+        <li>
+          <a href="#">Ekonomi</a>
+        </li>
+        <li>
+          <a href="#">Teknologi</a>
+        </li>
+        <li>
+          <a href="#">Gosip</a>
+        </li>
+        <li>
+          <a href="#">Otomotif</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+
+    <div class="content">
+    <section id="showcase">
+      <div class="cycle-slideshow">
+        <span class="cycle-prev">&#9001;</span> <!-- Untuk membuat tanda panah di kiri slider -->
+        <span class="cycle-next">&#9002;</span> <!-- Untuk membuat tanda panah di kanan slider -->
+      
+        <img src="images/1.jpg" alt="Gambar Pertama">
+        <img src="images/2.jpg" alt="Gambar Kedua">
+        <img src="images/3.jpg" alt="Gambar Ketiga">
+        <img src="images/4.jpg" alt="Gambar Keempat">
+      </div>
+      
+    </section>
+
+  <div class="isi">
+        <div class="post-info">
+          Di Posting Oleh <b><a href="#" class="link">Danis Faisal</a></b>
+        </div>
+        <img src="img/cristiano.jpg">
+        <h1> Bintang Real Madrid Dikabarkan Akan Hengkang </h1>
+        <hr>
+        <p>
+          Megabintang Real Madrid Cristiano Ronaldo sejatinya memang ingin hengkang dari klub yang bermarkas di Santiago Bernabeu tersebut. Karena itu, seluruh penggawa Madrid tidak terkejut kala Ronaldo mengucapkan isyarat bakal meninggalkan Los Merengues.
+        </p>        
+        <a href="ronaldo.php" class="link">Selengkapnya...</a>
+      </div>
+
+      <div class="sidebar">
+        <div class="judul">
+          <h2 class="judul">Populer</h2>
+        </div>
+        <div class="isisidebar">
+          <a href="#"><p>15 Juni 2018 | 21.06 WIB</p></a>
+          <a href="#" class="linksidebar">Pernyataan santai Jokowi menanggapi munculnya capres dan cawapres</a>
+        </div>
+        <hr>
+        <div class="isisidebar">
+          <a href="#"><p>15 Juni 2018 | 20.46 WIB</p></a>
+          <a href="#" class="linksidebar">tren Elektabilitas Jokowi vs Prabowo di 4 Lembaga Survei</a>
+        </div>
+        <hr>
+        <div class="isisidebar">
+          <a href="#"><p>16 Juni 2018 | 01.16 WIB</p></a>
+          <a href="#" class="linksidebar">Tak Dapat Untung Alasan Balik PHK 4,100 Karyawan Tesla</a>
+        </div>
+        <hr>
+        <div class="isisidebar">
+          <a href="#"><p>16 Juni 2018 | 13.11 WIB</p></a>
+          <a href="#" class="linksidebar">Kapolri Tito Karnavian Himbau Malam Takbiran Tak Hura-Hura</a>
+        </div>
+        <hr>
+        <h2 class="judul">Terbaru</h2>
+        <div class="isisidebar">
+          <a href="#"><p>15 Juni 2018 | 61.56 WIB</p></a>
+          <a href="#" class="linksidebar">Pertandingan Pertama Piala Dunia 2018 Rusia Bantai Arab Saudi 5-0 Tanpa Balas</a>
+        </div>
+        <hr>
+        <div class="isisidebar">
+          <p>15 Juni 2018 | 23.43 WIB</p>
+          <a href="#" class="linksidebar">Ronaldo cs Siap Mengalahkan Armada Spanyol</a>
+        </div>
+        <hr>
+        <div class="isisidebar">
+          <p>15 Juni 2018 | 21.06 WIB</p>
+          <a href="#" class="linksidebar">Peneliti Ungkap Skenario Petaka Pada 2020</a>
+        </div>
+        <hr>
+
+        <div class="isisidebar">
+          <p>15 Juni 2018 | 06.06 WIB</p>
+          <a href="#" class="linksidebar">Selamat Lebaran, Mohon Maaf Bila Ada Kesalahan</a>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="pilihanatas">
+      <div class="isi1">
+        <a href="#" class="link"><img src="images/1.jpg">
+        <h3>Pernyataan santai Jokowi menanggapi munculnya capres dan cawapres</h3></a>
+      </div>
+      <div class="isi1">
+        <a href="#" class="link"><img src="images/2.jpg">
+        <h3>Tren Elektabilitas Jokowi Vs Prabowo di 4 Lembaga Survei</h3></a>
+      </div>
+      <div class="isi1">
+        <a href="#" class="link"><img src="images/3.jpg">
+        <h3>Tak Dapat Untung Alasan di Balik PHK 4.100 Karyawan Tesla</h3></a>
+      </div>
+        <div class="isi1">
+        <a href="#" class="link"><img src="images/tito.jpg">
+        <h3>Kapolri Imbau Malam Takbiran Tak Hura-hura</h3></a>
+      </div>
+      <div class="isi1">
+        <a href="#" class="link"><img src="img/cristiano.jpg">
+        <h3>Madrid Pelatih baru, Cristiano Siap Hengkang Dari Real Madrid</h3></a>
+      </div>
+      <div class="isi1">
+        <a href="#" class="link"><img src="images/4.jpg">
+        <p>Kamis, 14-06-2018</p>
+        <h3>Peneliti Ungkap Skenario Petaka pada 2070</h3></a>
+      </div>
+      <div class="clearfix">
+        <button type="submit" class="signup" name="submit"><a href="#" class="link">KLIK UNTUK BERITA LAINNYA</a></button>
+    </div>
+    </div>
+
+
+    <div class="bottom">
+    <div class="bawah">
+      <h2>Random Post</h2><hr color="#454545" width="90%" align="left">
+      <ul class="widget-bot">
+        <li>
+          <div class="wid-img">
+            <a href="#"><img src="img/cristiano.jpg"><p>Cristiano Ronaldo Bakal Hengkang Dari Real Madrid</p></a>
+          </div>
+        </li>
+      </ul>
+      <ul class="widget-bot">
+        <li>
+            <a href="#"><img src="img/cristiano.jpg"><p>Cristiano Ronaldo Bakal Hengkang Dari Real Madrid</p></a>
+        </li>
+      </ul>
+      <ul class="widget-bot">
+        <li>
+          <div class="wid-img">
+            <a href="#"><img src="img/cristiano.jpg"><p>Cristiano Ronaldo Bakal Hengkang Dari Real Madrid</p></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+      <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email...">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <div class="footer">
+      <div class="footerbawah">
+        <a href="#" class="link">Peta Situs &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href="#" class="link">Tentang Kami &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href="#" class="link">Kontak Kami &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href="#" class="link">Info Karir &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href="#" class="link">Panduan Kebijakan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><a href="#" class="link">Info Iklan &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a><br><br>Faisal.inc Copyright &copy 2017 - 2018 | All Right Reserved
+      </div>
+    </div>
+  </body>
+</html>
